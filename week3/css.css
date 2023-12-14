@@ -1,5 +1,6 @@
 body {
   background-color: lightblue;
+  background-image: url("bg_image.png");
 }
 
 h1 {
@@ -13,9 +14,15 @@ p {
 }
 
 h3 {
-  color: #39FF14;
+  color: #6a5acd;
   text-align: center;
+  
 pre {
 	text-align: left;
-	font-family: portoluce;
+	font-family: garmond;
 }
+
+#grad {
+  background-image: linear-gradient(#191970, #39FF14);
+}
+
