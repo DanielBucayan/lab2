@@ -4,22 +4,24 @@ body {
 }
 
 h1 {
-  color: #191970;
+  color: #b5def1;
   text-align: center;
 }
 
 p {
   font-family: verdana;
   font-size: 20px;
+  color: #fac6d9;
 }
 
 h3 {
-  color: #6a5acd;
+  color: #bf94e4;
   text-align: center;
   
 pre {
 	text-align: left;
 	font-family: garmond;
+	color: #fac6d9;
 }
 
 #grad {
