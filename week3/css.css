@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: #191970;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+h3 {
+  color: #39FF14;
+  text-align: center;
+pre {
+	text-align: left;
+	font-family: portoluce;
+}
