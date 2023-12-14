@@ -15,17 +15,29 @@ h2 {
 
 
 p {
+	margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
   font-family: verdana;
   font-size: 20px;
   color: #fac6d9;
+}
+
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
 }
 
 h3 {
   color: #D4AF37;
   text-align: left;
   font-family: 'Poem Letters Serif', sans-serif;
-  font-size: 30px;
-  background-color: #BFC0C0;
+  font-size: 45px;
+  background-color: #12674A;
 }
+
+
   
 
