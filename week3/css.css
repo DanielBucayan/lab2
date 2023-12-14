@@ -1,36 +1,20 @@
 body {
-	margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
   background-color: lightblue;
   background-image: url("bg_image.png");
 }
 
 h1 {
-	margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
   color: #b5def1;
   text-align: center;
 }
 
 h2 {
-	margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
 	text-align: left;
 	color: #36827F;
 }
 
 
 p {
-	margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
   font-family: verdana;
   font-size: 20px;
   color: #fac6d9;
@@ -43,10 +27,6 @@ div {
 }
 
 h3 {
-	margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
   color: #D4AF37;
   text-align: left;
   font-family: 'Poem Letters Serif', sans-serif;
