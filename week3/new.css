@@ -1,9 +1,10 @@
 body {
   background-image: url("https://t3.ftcdn.net/jpg/05/11/77/14/360_F_511771444_nEuZH56Fac7RgRxVJrBZP7b2xDqH04PE.jpg");
   height: 100%;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
 }
 
