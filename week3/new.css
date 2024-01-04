@@ -8,13 +8,11 @@ body {
 }
 
 h1 {
-  color: #b5def1;
   text-align: center;
 }
 
 h2 {
 	text-align: left;
-	color: #36827F;
 }
 
 
@@ -25,7 +23,6 @@ p {
   margin-left: 80px;
   font-family: verdana;
   font-size: 20px;
-  color: #fac6d9;
 }
 
 div {
@@ -35,7 +32,6 @@ div {
 }
 
 h3 {
-  color: #D4AF37;
   text-align: left;
   font-family: 'Poem Letters Serif', sans-serif;
   font-size: 45px;
