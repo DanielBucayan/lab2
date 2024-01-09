@@ -17,7 +17,7 @@ header {
 	max-width: 90%;
 	margin: 0 auto;
 	padding: 0 10px;
-	background-image: url("container1.png");
+	background-color: transparent;
 	background-size: 120%;
 }
 
