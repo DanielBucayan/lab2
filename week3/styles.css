@@ -9,10 +9,16 @@ body {
 	background-image: url("container1.png");
 }
 
-.poem-full pre {
+.poem-full {
 	margin: auto;
 	padding: 10px;
 	color: black;
+}
+
+.content {
+	margin: auto;
+	padding: 10px;
+	color: black
 }
 
 header {
