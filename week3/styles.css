@@ -1,8 +1,7 @@
 body {
   background-image: url("moon.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  max-width: 100%;
+  background-position: center;
 }
 
 .container{
