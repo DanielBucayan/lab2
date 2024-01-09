@@ -1,10 +1,5 @@
 body {
-  background-image: url("https://t3.ftcdn.net/jpg/05/11/77/14/360_F_511771444_nEuZH56Fac7RgRxVJrBZP7b2xDqH04PE.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  background-color: powderblue;
 }
 
 .container{
@@ -14,8 +9,8 @@ body {
 }
 
 header {
-	background-color: powderblue;
-	color: #fff
+	background-color: #ffffff;
+	color: black;
 	padding: 1em 0;
 }
 
@@ -45,17 +40,18 @@ main {
 	margin-top: 30px;
 }
 
-#poem-list {
-	list-style: None;
+#line-otd {
+	font-style: italic; 
 	padding: 0;
 }
 
-#poem-list li {
-	margin-bottom: 30px;
+#line-otd h3 {
+	color: #333
 }
 
-#poem-list h3 {
-	color: #333
+#line-otd p {
+	font-style: italic;
+	color: black;
 }
 	
 #intro-section {
