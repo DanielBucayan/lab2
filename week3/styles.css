@@ -9,7 +9,7 @@ body {
 	background-image: url("container1.png");
 }
 
-.poem-full {
+.poem-full pre {
 	margin: auto;
 	padding: 10px;
 	color: black;
