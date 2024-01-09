@@ -72,10 +72,10 @@ a:active {
 	
 
 .main-container {
-	margin-top: 25px;
+	margin: auto;
 	padding: 25px;
 	background-color: powderblue;
-	width: 100%;
+	width: 500px;
 }
 
 #poems-collection {
@@ -113,6 +113,13 @@ p {
 	color: black;
 	margin-left: 15px;
 	margin-bottom: 15px;
+}
+
+.content {
+	margin: auto;
+	padding: 10px;
+	background-color: powderblue;
+	width: 300px;
 }
 
 /*
