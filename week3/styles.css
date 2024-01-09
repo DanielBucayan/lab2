@@ -121,7 +121,10 @@ p {
 	margin-bottom: 15px;
 }
 
-
+#poems-read {
+	margin: 10px 10px 10px 10px;
+	padding: 5px;
+}
 	
 
 
