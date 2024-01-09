@@ -7,6 +7,62 @@ body {
 
 }
 
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+header{
+	background-color: powderblue;
+	color: #fff
+	padding: 1em 0;
+}
+
+nav ul {
+	list-style: none;
+	padding: 10px;
+}
+
+nav li{
+	display: inline;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #fff
+	font-weight: bold;
+}
+
+main {
+	margin-top: 25px;
+	padding: 25px:
+	background-color: powderblue;
+}
+
+#poems-collection {
+	margin-top: 30px;
+}
+
+#poem-list {
+	list-style: None;
+	padding: 0;
+}
+
+#poem-list li {
+	margin-bottom: 30px;
+}
+
+#poem-list h3 {
+	color: #333
+}
+	
+#intro-section {
+	margin-bottom: 45px;
+}
+
+/*
 h1 {
   text-align: center;
 }
@@ -37,3 +93,4 @@ h3 {
   font-size: 45px;
   background-color: #12674A;
 }
+*/
