@@ -72,16 +72,13 @@ a:active {
 	
 .main-container {
 	margin: auto;
-	padding: 10px;
 	background-color: powderblue;
-	width: 300px;
 }
 
 .second-container {
 	margin: auto;
 	padding: 10px;
 	background-color: powderblue;
-	width: 100px;
 }
 
 #poems-collection {
@@ -104,6 +101,7 @@ a:active {
 	
 #intro-section {
 	margin: auto;
+	padding: 10px;
 }
 
 .intro-title {
