@@ -73,9 +73,9 @@ a:active {
 
 .main-container {
 	margin: auto;
-	padding: 25px;
+	padding: 10px;
 	background-color: powderblue;
-	width: 500px;
+	width: 300px;
 }
 
 #poems-collection {
@@ -116,11 +116,10 @@ p {
 }
 
 .content {
-	margin: 10px 10px 10px 10px;
+	margin: auto;
 	padding: 10px;
 	background-color: powderblue;
 	width: 300px;
-	float: left;
 }
 
 /*
