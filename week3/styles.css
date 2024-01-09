@@ -9,6 +9,12 @@ body {
 	background-image: url("container1.png");
 }
 
+.poem-full {
+	margin: auto;
+	padding: 10px;
+	color: black;
+}
+
 header {
 	background-color: #ffffff;
 	color: black;
