@@ -2,7 +2,7 @@ body {
 	background-image: url("moon.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 150%;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 	margin: 0 auto;
 	padding: 0 10px;
 	background-image: url("container1.png");
-	background-size: 100%;
+	background-size: 150%;
 }
 
 .container{
