@@ -73,6 +73,7 @@ a:active {
 .main-container {
 	margin: auto;
 	background-color: powderblue;
+	position: relative;
 }
 
 .second-container {
