@@ -72,9 +72,16 @@ a:active {
 	
 .main-container {
 	margin: auto;
-	padding: 50px;
+	padding: 10px;
 	background-color: powderblue;
-	width: 100%;
+	width: 300px;
+}
+
+.second-container {
+	margin: auto;
+	padding: 10px;
+	background-color: powderblue;
+	width: 100px;
 }
 
 #poems-collection {
