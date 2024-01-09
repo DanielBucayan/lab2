@@ -70,7 +70,6 @@ a:active {
 	text-decoration: underline;
 }
 	
-
 .main-container {
 	margin: auto;
 	padding: 10px;
@@ -115,12 +114,14 @@ p {
 	margin-bottom: 15px;
 }
 
-.content {
+.poem-full {
 	margin: auto;
 	padding: 10px;
 	background-color: powderblue;
 	width: 300px;
 }
+	
+
 
 /*
 h1 {
