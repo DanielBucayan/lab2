@@ -91,6 +91,8 @@ a:active {
 #line-otd {
 	font-style: italic; 
 	margin: 5px 5px 5px 5px;
+	text-align: center;
+	height: auto;
 }
 
 #line-otd h3 {
