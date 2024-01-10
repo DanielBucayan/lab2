@@ -84,10 +84,10 @@ a:active {
 	width: 300px;
 }
 
-.poem-container {
+.poem-bg {
 	margin: 20px 50px 20px 50px;
 	background-image: url("night.png");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: auto;
 }
