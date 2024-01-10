@@ -27,7 +27,7 @@
 <section id="poems-read">
 <div>
 <h2 class="poem-title">Black</h2>
-<pre class="poem-content">
+<pre class="poem-content" id="blackPoemContent">
 Black, a shade so mysterious.
 It can be something depressing or something gorgeous.
 Depressing as the heart break from someone you really love,
@@ -54,7 +54,7 @@ Now, because of you, an angel, everything is bright and so heavenly.
 <main class="main-container">
 <div>
 <h2 class="poem-title">Silent Thoughts</h2>
-<pre class="poem-content">
+<pre class="poem-content" id="silentThoughtsPoemContent">
 Staring at the crowd of people around. 
 Observing what makes them happy and sound.
 Trying to mimic the joy etched in their face,
@@ -79,6 +79,16 @@ I guess i'll keep holding on for now. Don't worry, i'll be just fine with my sha
 </section>
 </main>
 
+<script>
+  function togglePoem(poemId) {
+    var contentElement = document.getElementById(poemId + 'PoemContent');
+    if (contentElement.style.display === 'none') {
+      contentElement.style.display = 'block';
+    } else {
+      contentElement.style.display = 'none';
+    }
+  }
+</script>
 
 </body>
 </html>
