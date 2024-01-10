@@ -1,5 +1,8 @@
 body {
-	background-color: blue;
+	background-image: url("moon.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 150%;
 }
 
 header {
