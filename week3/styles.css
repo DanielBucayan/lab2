@@ -84,13 +84,6 @@ a:active {
 	width: 300px;
 }
 
-.poem-container {
-	margin: 20px 50px 20px 50px;
-	background-color: powderblue;
-	width: 650px;
-	height: auto;
-}
-
 #poems-collection {
 	margin-top: 30px;
 }
