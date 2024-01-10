@@ -82,11 +82,11 @@ I guess i'll keep holding on for now. Don't worry, i'll be just fine with my sha
 <script>
   function togglePoem(poemId) {
     var contentElement = document.getElementById(poemId + 'PoemContent');
-    if (contentElement.style.display === 'none') {
+    if (contentElement.style.display === '' || contentElement.style.display === 'none') {
       contentElement.style.display = 'block';
     } else {
       contentElement.style.display = 'none';
-    }
+	  }
   }
 </script>
 
