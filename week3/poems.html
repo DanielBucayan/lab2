@@ -1,92 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Poetry Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Poetry Collection</title>
+  <style>
+    /* Additional CSS for hiding poem content initially */
+    .poem-content {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<div class="container">
-<h3>Hi! I'm Daniel Bucayan and this is</h3><br>
-<h1 class="intro-title">My Poetry Collection</h1>
-<nav>
-<ul class="nav">
-<li class="nav-buttons"><a href="index2.html">Home</li></a>
-<li class="nav-buttons"><a href="poems.html">Poems</li></a>
-<li class="nav-buttons"><a href="about.html">About</li></a>
-<li class="nav-buttons"><a href="suggestions.html">Suggestions</li></a>
-</ul>
-</nav>
-</div>
+  <div class="container">
+    <h3>Hi! I'm Daniel Bucayan and this is</h3><br>
+    <h1 class="intro-title">My Poetry Collection</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav-buttons"><a href="index2.html">Home</a></li>
+        <li class="nav-buttons"><a href="poems.html">Poems</a></li>
+        <li class="nav-buttons"><a href="about.html">About</a></li>
+        <li class="nav-buttons"><a href="suggestions.html">Suggestions</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main class="main-container">
-
-<section id="poems-read">
-<div>
-<h2 class="poem-title">Black</h2>
-<pre class="poem-content" id="blackPoemContent">
-Black, a shade so mysterious.
-It can be something depressing or something gorgeous.
-Depressing as the heart break from someone you really love,
-Or as gorgeous as the starry night sky above. 
-
-Black can be quite scary.
-It can resemble the feeling of being so empty.
-The feeling of being all alone,
-And being stuck in a place that is dark and unknown. 
-
-Black also resembles the cold night.
-Welcomes us after a long fight during daylight.
-Greets us with the cold breeze of the wind
-Helps us rest, so that tomorrow we will be, once again, determined. 
-
-Black. Just like my life before I met you.
-Everything's pitch black, can't see any beautiful view.
-It is a good thing that I met you while searching randomly.
-Now, because of you, an angel, everything is bright and so heavenly.
-</pre>
-</div>
+  <section id="poems-read">
+    <div>
+      <h2 class="poem-title" onclick="togglePoem('black')">Black</h2>
+      <pre class="poem-content" id="blackPoemContent">
+        Black, a shade so mysterious.
+        It can be something depressing or something gorgeous.
+        Depressing as the heartbreak from someone you really love,
+        Or as gorgeous as the starry night sky above.
+        ...
+      </pre>
+    </div>
+  </section>
 </main>
 
 <main class="main-container">
-<div>
-<h2 class="poem-title">Silent Thoughts</h2>
-<pre class="poem-content" id="silentThoughtsPoemContent">
-Staring at the crowd of people around. 
-Observing what makes them happy and sound.
-Trying to mimic the joy etched in their face,
-But I can't seem to understand. My smile seemed out of place. 
-
-Hiding these scars is one of the many reasons,
-Of why I don't go out and cherish the seasons.
-I am frozen by the cold memories, I can't seem to move on.
-I can't even muster the strength to face the light of dawn. 
-
-I try to fit in, but my broken pieces don't match the crowd.
-I try to talk, but my voice speaks words with unspoken loud.
-I wish to join in, but i'm too scared to be focused on and seen.
-I wish I knew how, but I guess I don't fit those kinds of scenes. 
-
-The world may never see what's happening under the shell. 
-Just like how one can never see what's at the end of a well.
-It might be deep. It might be shallow. It might be hard for me to swallow.
-I guess i'll keep holding on for now. Don't worry, i'll be just fine with my shadow.
-</pre>
-</div>
-</section>
+  <div>
+    <h2 class="poem-title" onclick="togglePoem('silent-thoughts')">Silent Thoughts</h2>
+    <pre class="poem-content" id="silentThoughtsPoemContent">
+      Staring at the crowd of people around.
+      Observing what makes them happy and sound.
+      Trying to mimic the joy etched in their face,
+      But I can't seem to understand. My smile seemed out of place.
+      ...
+    </pre>
+  </div>
 </main>
 
 <script>
+  // JavaScript code for toggling poem content visibility
   function togglePoem(poemId) {
     var contentElement = document.getElementById(poemId + 'PoemContent');
     if (contentElement.style.display === '' || contentElement.style.display === 'none') {
       contentElement.style.display = 'block';
     } else {
       contentElement.style.display = 'none';
-	  }
+    }
   }
 </script>
 
