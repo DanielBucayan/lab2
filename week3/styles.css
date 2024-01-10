@@ -84,17 +84,9 @@ a:active {
 	width: 300px;
 }
 
-#black-container {
+.poem-container {
 	margin: 20px 50px 20px 50px;
-	background-image: url("alhaitham.png");
-	background-size: auto;
-	width: 650px;
-	height: auto;
-}
-
-#stale-container {
-	margin: 20px 50px 20px 50px;
-	background-image: url("xiao.png");
+	background-image: url("glowy.png");
 	background-size: auto;
 	width: 650px;
 	height: auto;
