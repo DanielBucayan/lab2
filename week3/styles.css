@@ -73,15 +73,16 @@ a:active {
 	
 .main-container {
 	margin: 20px 50px 20px 50px;
-	background-image: url("sandstorm.png");
+	background-image: url("stillness.png");
 	width: 650px;
 	height: auto;
 }
 
 .second-container {
 	margin: 20px 50px 20px 50px;
-	background-color: powderblue;
-	width: 300px;
+	background-image: url("stillness.png");
+	width: 650px;
+	height: auto;
 }
 
 .poem-container {
