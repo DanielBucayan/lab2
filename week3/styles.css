@@ -84,11 +84,9 @@ a:active {
 	width: 300px;
 }
 
-.poem-bg {
+.poem-container {
 	margin: 20px 50px 20px 50px;
-	background-image: url("night.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: powderblue;
 	width: 650px;
 	height: auto;
 }
