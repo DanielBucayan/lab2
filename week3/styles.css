@@ -88,7 +88,7 @@ a:active {
 	margin: 20px 50px 20px 50px;
 	background-image: url("eagleplume.png");
 	background-size: auto;
-	width: 650px;
+	width: auto;
 	height: auto;
 }
 
