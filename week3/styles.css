@@ -116,6 +116,12 @@ h2 {
 	color: black;
 }
 
+#lineoftheday {
+	position: center;
+	margin: 5px 5px 5px 5px;
+	padding: 5px;
+}
+
 p {
 	color: black;
 	margin-left: 15px;
