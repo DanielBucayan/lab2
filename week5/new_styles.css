@@ -22,6 +22,25 @@ header {
 	background-size: 120%;
 }
 
+.about-container {
+      overflow: hidden;
+}
+
+.about-img {
+	float: left;
+    width: 50%;
+    height: auto;
+}
+
+.about-content {
+    float: right;
+    width: 50%;
+    height: auto;
+    background-color: powderblue;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
 .poem-full {
 	margin: auto;
 	padding: 10px;
