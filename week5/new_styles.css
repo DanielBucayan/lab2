@@ -34,12 +34,12 @@ header {
 
 .about-content {
     float: right;
-    width: 60%;
+    width: 50%;
     height: auto;
     background-color: powderblue;
     box-sizing: border-box;
     padding: 20px;
-	margin: 50px 50px 50px 50px;
+	margin: 50px 100px 50px 10px;
 }
 
 .poem-full {
