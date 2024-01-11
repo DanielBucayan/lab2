@@ -28,12 +28,13 @@ header {
 
 .about-img {
 	float: left;
-    width: 350px;
+    width: 40%;
     height: auto;
 }
 
 .about-content {
-    width: 350px;
+    float: right;
+    width: 60%;
     height: auto;
     background-color: powderblue;
     box-sizing: border-box;
