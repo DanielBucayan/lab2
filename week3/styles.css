@@ -1,8 +1,8 @@
 body {
 	background-image: url("moon.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 500%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 header {
