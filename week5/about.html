@@ -53,12 +53,11 @@ regarding said words or topics. I hope you'll have a wonderful time reading!</p>
 let counter = 0;
 function onButtonClick() {
   counter += 1;
-  return counter;
   alert('Click Counter is' + ' ' + counter);
 }
 document.getElementById("click").innerHTML = "The Click counter is: " + counter;
 const button = document.querySelector('button');
-button.addEventListener('button', onButtonClick);
+button.addEventListener('click', onButtonClick);
 </script>
 </body>
 </html>
