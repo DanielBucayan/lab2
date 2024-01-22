@@ -33,6 +33,8 @@ But that doesn't mean there is no sun or a beautiful scenery waiting for you."<b
 </section>
 </main>
 
+<p id="greeting"></p>
+
 <main class="second-container">
 <section id="line-otd">
 <h3 id="lineoftheday">Line of the Day</h3>
@@ -46,6 +48,15 @@ But that doesn't mean there is no sun or a beautiful scenery waiting for you."<b
     }, 5000);
 	
   };
+  const author = {
+  firstName: "Daniel",
+  lastName: "Bucayan",
+  id: 5566,
+  greeting : function() {
+    return "Hi, I am" + " " +this.firstName + " " + this.lastName + ". " + "I am the author of these poems.";
+  }
+};
+document.getElementById("greeting").innerHTML = person.greeting();
 </script>
 
 </body>
