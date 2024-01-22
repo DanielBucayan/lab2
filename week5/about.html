@@ -41,5 +41,17 @@ regarding said words or topics. I hope you'll have a wonderful time reading!</p>
 </section>
 </main>
 
+<button id="button">Click Me!</button> 
+
+<script>
+let counter = 0;
+function click() {
+  counter += 1;
+  return counter;
+}
+document.getElementById("button").addEventListener("Click Me", click);
+document.getElementById("button").innerHTML = "The Click counter is: " + counter;
+
+</script>
 </body>
 </html>
