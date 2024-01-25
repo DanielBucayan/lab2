@@ -27,8 +27,9 @@
 <?php 
 
 $txt = "PHP";
-print "<p>I am about to apply " . $txt . " on my website</p>"
+print "<p>I am about to apply " . $txt . " on my website</p><br>"
 
+var_dump($txt);
 ?>
 </body>
 </html>
