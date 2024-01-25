@@ -27,9 +27,19 @@
 <?php 
 $txt = "PHP";
 print "<p>I am about to apply " . $txt . " on my website</p><br>"
-
 ?>
+</section>
+</main>
 
+<main class="main-container">
+<section id="intro-section">
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</section>
+</main>
 
+</form>
 </body>
 </html>
