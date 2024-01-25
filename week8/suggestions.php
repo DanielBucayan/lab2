@@ -21,5 +21,13 @@
 </nav>
 </div>
 </header>
+
+<main class="main-container">
+<section id="intro-section">
+<?php 
+
+$txt = "PHP";
+
+?>
 </body>
 </html>
