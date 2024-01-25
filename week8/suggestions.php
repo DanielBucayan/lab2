@@ -28,8 +28,6 @@
 
 $txt = "PHP";
 print "<p>I am about to apply " . $txt . " on my website</p><br>"
-echo str_word_count("Hello world!");
-
 ?>
 </body>
 </html>
