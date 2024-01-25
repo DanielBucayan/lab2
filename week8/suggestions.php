@@ -25,11 +25,10 @@
 <main class="main-container">
 <section id="intro-section">
 <?php 
-
 $txt = "PHP";
 print "<p>I am about to apply " . $txt . " on my website</p><br>"
 
-
+print "<p>Randomly generating number " . echo(rand(1, 100)); . ". Is this your favorite number?</p><br>"
 ?>
 
 
