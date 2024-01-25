@@ -19,10 +19,10 @@
     <h1 class="intro-title">My Poetry Collection</h1>
     <nav>
       <ul class="nav">
-        <li class="nav-buttons"><a href="index2.html">Home</a></li>
-        <li class="nav-buttons"><a href="poems.html">Poems</a></li>
-        <li class="nav-buttons"><a href="about.html">About</a></li>
-        <li class="nav-buttons"><a href="suggestions.html">Suggestions</a></li>
+        <li class="nav-buttons"><a href="index2.php">Home</a></li>
+        <li class="nav-buttons"><a href="poems.php">Poems</a></li>
+        <li class="nav-buttons"><a href="about.php">About</a></li>
+        <li class="nav-buttons"><a href="suggestions.php">Suggestions</a></li>
       </ul>
     </nav>
   </div>
