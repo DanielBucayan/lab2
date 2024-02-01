@@ -26,8 +26,8 @@
 <section id="intro-section">
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $suggestionErr = "";
-$name = $email = $comment = $suggestion = "";
+$nameErr = $commentErr = $suggestionErr = "";
+$name = $comment = $suggestion = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -40,16 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
   
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
   if (empty($_POST["suggestion"])) {
     $suggestion = "";
   } else {
@@ -81,9 +71,6 @@ function test_input($data) {
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
   Suggestion: <input type="text" name="suggestion" value="<?php echo $suggestion;?>">
   <span class="error"><?php echo $suggestionErr;?></span>
   <br><br>
@@ -96,11 +83,34 @@ function test_input($data) {
 echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
-echo $email;
-echo "<br>";
 echo $suggestion;
 echo "<br>";
 echo $comment;
+?>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDB";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+VALUES ('$name', '$suggestion', '$comment')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
 </section>
 </main>
