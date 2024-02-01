@@ -26,8 +26,8 @@
 <section id="intro-section">
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $suggestionErr = "";
-$name = $email = $gender = $comment = $suggestion = "";
+$nameErr = $emailErr = $suggestionErr = "";
+$name = $email = $comment = $suggestion = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -65,12 +65,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $comment = test_input($_POST["comment"]);
   }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
 }
 
 function test_input($data) {
@@ -95,12 +89,6 @@ function test_input($data) {
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
   <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
 
@@ -113,8 +101,6 @@ echo "<br>";
 echo $suggestion;
 echo "<br>";
 echo $comment;
-echo "<br>";
-echo $gender;
 ?>
 </section>
 </main>
