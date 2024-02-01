@@ -101,7 +101,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyPoemForm (name, suggestion, comment)
+$sql = "INSERT INTO mypoemform (name, suggestion, comment)
 VALUES ('$name', '$suggestion', '$comment')";
 
 if ($conn->query($sql) === TRUE) {
