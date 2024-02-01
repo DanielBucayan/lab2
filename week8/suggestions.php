@@ -27,7 +27,7 @@
 <?php
 // define variables and set to empty values
 $nameErr = $commentErr = $suggestionErr = "";
-$name = $comment = $suggestion = "";
+$name = $suggestion =  $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
