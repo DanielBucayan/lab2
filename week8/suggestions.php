@@ -79,6 +79,7 @@ function test_input($data) {
   <input type="submit" name="submit" value="Submit">  
 </form>
 
+
 <?php
 echo "<h2>Your Input:</h2>";
 echo $name;
@@ -87,6 +88,8 @@ echo $suggestion;
 echo "<br>";
 echo $comment;
 ?>
+</section>
+</main>
 
 <?php
 $servername = "localhost";
@@ -101,7 +104,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO mypoemform (name, suggestion, comment)
+$sql = "INSERT INTO MyPoemForm (name, suggestion, comment)
 VALUES ('$name', '$suggestion', '$comment')";
 
 if ($conn->query($sql) === TRUE) {
@@ -112,9 +115,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-</section>
-</main>
 
-</form>
 </body>
 </html>
