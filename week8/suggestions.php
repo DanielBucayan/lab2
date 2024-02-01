@@ -73,7 +73,8 @@ function test_input($data) {
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
-
+</section>
+</main>
 
 <?php
 echo "<h2>Your Input:</h2>";
@@ -84,8 +85,7 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 ?>
-</section>
-</main>
+
 
 <?php
 $servername = "localhost";
