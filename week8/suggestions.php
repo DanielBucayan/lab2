@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $suggestion = "";
   } else {
     $suggestion = test_input($_POST["suggestion"]);
-    }
+    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
   }
 
   if (empty($_POST["comment"])) {
