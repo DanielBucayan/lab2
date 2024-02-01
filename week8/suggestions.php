@@ -26,7 +26,7 @@
 <section id="intro-section">
 <?php
 // define variables and set to empty values
-$nameErr = $commentErr = $suggestionErr = "";
+$nameErr = $suggestionErr = $commentErr = "";
 $name = $suggestion =  $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -41,10 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
   
   if (empty($_POST["suggestion"])) {
-    $suggestion = "";
+    $suggestionErr = "Suggestion is required";
   } else {
     $suggestion = test_input($_POST["suggestion"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
   }
 
   if (empty($_POST["comment"])) {
@@ -69,7 +68,6 @@ function test_input($data) {
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
   Suggestion: <input type="text" name="suggestion" value="<?php echo $suggestion;?>">
-  <span class="error"><?php echo $suggestionErr;?></span>
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
   <br><br>
@@ -84,6 +82,7 @@ echo "<br>";
 echo $suggestion;
 echo "<br>";
 echo $comment;
+echo "<br>";
 ?>
 </section>
 </main>
@@ -112,6 +111,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-
 </body>
 </html>
