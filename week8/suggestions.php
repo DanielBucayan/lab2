@@ -27,7 +27,7 @@
 <?php
 // define variables and set to empty values
 $nameErr = $suggestionErr = $commentErr = "";
-$name = $suggestion = $comment = $comment = "";
+$name = $suggestion = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -97,31 +97,35 @@ $dbname = "webprogss221";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Form submission handling
 
-    // Your existing form validation and data sanitization code goes here
+    // Form validation and data sanitization
+    $name = mysqli_real_escape_string($conn, trim(htmlspecialchars($_POST["name"]))); // Use all sanitization techniques!
+    $suggestion = mysqli_real_escape_string($conn, trim(htmlspecialchars($_POST["suggestion"])));
+    $comment = mysqli_real_escape_string($conn, trim(htmlspecialchars($_POST["comment"])));
 
-    // Create connection
+    // Check validation and display errors if needed
+
+    // Database connection with error handling
     $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Your existing data sanitization code for SQL injection prevention
-    $name = mysqli_real_escape_string($conn, $name);
-    $suggestion = mysqli_real_escape_string($conn, $suggestion);
-    $comment = mysqli_real_escape_string($conn, $comment);
+    // Construct SQL query with variables enclosed in single quotes
+    $sql = "INSERT INTO dpbucayan_myguests (name, suggestion, comment) VALUES ('$name', '$suggestion', '$comment')";
 
-    // SQL query to insert data into the database
-    $sql = "INSERT INTO dpbucayan_myguests (name, suggestion, comment)
-            VALUES ('$name', '$suggestion', '$comment')";
-
+    // Execute query and handle errors
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $conn->error . "<br>SQL query was: " . $sql; // Display the actual query for debugging
     }
 
     $conn->close();
+} else {
+    // Initialize variables to avoid undefined errors
+    $name = "";
+    $suggestion = "";
+    $comment = "";
 }
 ?>
 </body>
