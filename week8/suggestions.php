@@ -89,9 +89,9 @@ echo "<br>";
 
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "myDB";
+$username = "webprogss221";
+$password = "=latHen97";
+$dbname = "webprogss221";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -100,7 +100,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyPoemForm (name, suggestion, comment)
+$sql = "INSERT INTO dpbucayan_myguests (name, suggestion, comment)
 VALUES ('$name', '$suggestion', '$comment')";
 
 if ($conn->query($sql) === TRUE) {
