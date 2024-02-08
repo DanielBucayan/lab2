@@ -83,9 +83,9 @@ echo $suggestion;
 echo "<br>";
 echo $comment;
 echo "<br>";
+echo $gender
 ?>
 
-?>
 </section>
 </main>
 
