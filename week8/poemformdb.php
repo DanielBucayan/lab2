@@ -11,6 +11,10 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+$name = mysqli_real_escape_string($conn, $name);
+$suggestion = mysqli_real_escape_string($conn, $suggestion);
+$comment = mysqli_real_escape_string($conn, $comment);
+
 // sql to create table
 $sql = "CREATE TABLE MyPoemForm (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
