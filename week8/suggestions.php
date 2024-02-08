@@ -27,7 +27,7 @@
 <?php
 // define variables and set to empty values
 $nameErr = $suggestionErr = $commentErr = "";
-$name = $suggestion =  $comment = "";
+$name = $suggestion = $comment = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -61,19 +61,19 @@ function test_input($data) {
 }
 ?>
 
-<h2>Poem Suggestion Form</h2>
+<h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
   Suggestion: <input type="text" name="suggestion" value="<?php echo $suggestion;?>">
+  <span class="error">* <?php echo $suggestionErr;?></span>
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
-
 
 <?php
 echo "<h2>Your Input:</h2>";
@@ -83,6 +83,8 @@ echo $suggestion;
 echo "<br>";
 echo $comment;
 echo "<br>";
+?>
+
 ?>
 </section>
 </main>
