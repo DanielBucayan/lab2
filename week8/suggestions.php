@@ -83,7 +83,6 @@ echo $suggestion;
 echo "<br>";
 echo $comment;
 echo "<br>";
-echo $gender
 ?>
 
 </section>
@@ -101,6 +100,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
+$name = mysqli_real_escape_string($conn, $name);
+$suggestion = mysqli_real_escape_string($conn, $suggestion);
+$comment = mysqli_real_escape_string($conn, $comment);
 
 $sql = "INSERT INTO dpbucayan_myguests (name, suggestion, comment)
 VALUES ('$name', '$suggestion', '$comment')";
