@@ -94,27 +94,35 @@ $username = "webprogss221";
 $password = "=latHen97";
 $dbname = "webprogss221";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Form submission handling
+
+    // Your existing form validation and data sanitization code goes here
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Your existing data sanitization code for SQL injection prevention
+    $name = mysqli_real_escape_string($conn, $name);
+    $suggestion = mysqli_real_escape_string($conn, $suggestion);
+    $comment = mysqli_real_escape_string($conn, $comment);
+
+    // SQL query to insert data into the database
+    $sql = "INSERT INTO dpbucayan_myguests (name, suggestion, comment)
+            VALUES ('$name', '$suggestion', '$comment')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 }
-
-$name = mysqli_real_escape_string($conn, $name);
-$suggestion = mysqli_real_escape_string($conn, $suggestion);
-$comment = mysqli_real_escape_string($conn, $comment);
-
-$sql = "INSERT INTO dpbucayan_myguests (name, suggestion, comment)
-VALUES ('$name', '$suggestion', '$comment')";
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
 ?>
 </body>
 </html>
