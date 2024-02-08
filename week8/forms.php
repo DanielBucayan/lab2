@@ -104,11 +104,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $conn->close();
-} else {
-    // Initialize variables to avoid undefined errors
-    $name = "";
-    $suggestion = "";
-    $comment = "";
 }
 ?>
 </body>
